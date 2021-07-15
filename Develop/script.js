@@ -1,14 +1,19 @@
-// Assignment Code
-var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
+var btn = document.getElementById("btn");{
+
+  var generatePassword = "";
+  var password = document.getElementById("password");
+  var characters =
+    "abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*?";
+  for (var i = 0; i < 12; i++) {
+    generatePassword += characters.charAt(
+      Math.floor(Math.random() * characters.length)
+    );
+    
+  }
+  password.innerHTML = generatePassword;
 
 }
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+ 
