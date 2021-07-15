@@ -2,6 +2,7 @@
 
 var btn = document.getElementById("btn");{
 
+ 
   var generatePassword = "";
   var password = document.getElementById("password");
   var characters =
@@ -15,5 +16,6 @@ var btn = document.getElementById("btn");{
   password.innerHTML = generatePassword;
 
 }
+
 
  
